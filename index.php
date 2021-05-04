@@ -18,9 +18,9 @@
     ]
  ];
 
-foreach ( $Faq as $text ) {
-   echo $text['question'] . '<br>' . $text['answer'] . '<br>';
-}
+// foreach ( $Faq as $text ) {
+//    echo $text['question'] . '<br>' . $text['answer'] . '<br>';
+// }
 
 
 
@@ -40,11 +40,14 @@ foreach ( $Faq as $text ) {
 <body>
  <div class="container">
   <ul>
+
    <?php foreach ($Faq as $text) { ?>
      <li>
        <h3> <?php echo $text['question'] ?></h3>
+       <p> <?php echo $text['answer'] ?></p>
      </li>
    <?php } ?>
+
   </ul>
   
  </div>
