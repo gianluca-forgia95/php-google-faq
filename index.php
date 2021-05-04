@@ -32,15 +32,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet"> 
+    <!-- /Google Font -->
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
     <!-- /CSS -->
     <title>Google Faq</title>
 </head>
 <body>
+ <header>
+  <div class="logo">
+    <img src="https://www.geducator.com/wp-content/uploads/icons8-faq-528-300x300.png" alt="Q&A Logo">
+  </div>
+ </header>
  <div class="container">
   <ul>
-
    <?php foreach ($Faq as $text) { ?>
      <li>
        <h3> <?php echo $text['question'] ?></h3>
