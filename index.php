@@ -1,5 +1,5 @@
 <?php 
- $questionAndAnswers = [
+ $Faq = [
     [
      'question' => 'Come state implementando la recente decisione della Corte Europea?',
 
@@ -18,7 +18,7 @@
     ]
  ];
 
-foreach ( $questionAndAnswers as $text ) {
+foreach ( $Faq as $text ) {
    echo $text['question'] . '<br>' . $text['answer'] . '<br>';
 }
 
@@ -39,7 +39,13 @@ foreach ( $questionAndAnswers as $text ) {
 </head>
 <body>
  <div class="container">
-   <h2></h2>
+  <ul>
+   <?php foreach ($Faq as $text) { ?>
+     <li>
+       <h3> <?php echo $text['question'] ?></h3>
+     </li>
+   <?php } ?>
+  </ul>
   
  </div>
     
