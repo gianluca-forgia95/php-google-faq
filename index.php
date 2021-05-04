@@ -16,6 +16,32 @@
       'answer' => 'Quando crei un nuovo Account Google, lo associamo a un paese in base a dove è stato creato. Per quanto riguarda gli account creati almeno un anno fa, usiamo il paese da cui accedi solitamente ai servizi Google, in genere i servizi in cui hai trascorso più tempo nell ultimo anno.
       I viaggi frequenti solitamente non influiscono sul paese associato al tuo account. Se ti trasferisci in un altro paese, potrebbe occorrere circa un anno per aggiornare l associazione del paese.',
     ]
-
  ];
+
+foreach ( $questionAndAnswers as $text ) {
+   echo $text['question'] . '<br>' . $text['answer'] . '<br>';
+}
+
+
+
 ?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- /CSS -->
+    <title>Google Faq</title>
+</head>
+<body>
+ <div class="container">
+   <h2></h2>
+  
+ </div>
+    
+</body>
+</html>
